@@ -1,447 +1,208 @@
-/*page*/ /*    font-family: 'Merriweather', serif;*/
-
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #e6e6e6;
-    padding: 0px;
-    margin: 0;
-    width: 100%; height: 100%;
-}
-
-* { color:black; 
-    text-decoration: none;
-}
-
-.webcontainer {
-  width: 100%;
-  max-width: 1920px;
-  min-width: 480px;
-  margin-left:8px;
-  overflow: hidden;
-  justify-conten: center;
-  }
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- link to CSS file -->
+    <link rel="stylesheet" href="Style.css">
+        
+    <!-- link to JS file -->
+    <script type="text/javascript" src="animate.js"></script>
+        
+    <!-- tab name -->
+    <title>Motivation BeCode by Eline Danasovsky</title>
+        
+    <!-- font used -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     
-#header h1 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    font-size: 10vw;
-    color: black;
-    padding-top: 5vw;
-    margin: 0;
-    font-weight:500;
-    text-align: center;
-    letter-spacing: 1.5px;
-    z-index:2;
-    font-family: 'Source Serif Pro', serif;
-}
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
     
-/*main section*/
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+        
+    <!-- menu icon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   
+    
+  </head>
+    
+  <body>
+    <div class="webcontainer">
+    <!-- header start -->
+    <section class="fwh-main">
+      <div class="side top">
+        <div id="header" class="section, typewriter">
+            <h1><a href="#motivation" class="typewrite" data-period="2000" data-type='["Motivation."]'></a></h1></div></div>
+    <!-- header end -->
+        
+    <!-- menu icon start -->
+    
+      <div class="menubar">
+			  <div id="menu" onclick="onClickMenu()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+      </br>
+      </br>
+      <ul class="nav" id="nav">
+        <li><p class="left"><a href="#motivation">Motivation.</a></p></li>
+				<li><p class="left"><a href="#webdev">Why web development?</a></p></li>
+				<li><p class="left"><a href="#becode">Why BeCode?</a></p></li>
+				<li><p class="left"><a href="#about">About.</a></p></li>
+			</ul>
+    </div>
+    </section>
+    <!-- menu icon end -->
 
-.fwh-main {
-    height: 100vh;
-    background: #e6e6e6;
-    box-sizing: border-box;
-    margin: 0; 
-    display:flex;
-    min-height:100vh;
-}
+    <!-- section Motivation. start -->
 
-/*menu icon*/
-
-#menu{
-    display: inline-block;
-    cursor: pointer;
-    position: fixed;
-    top: 10vh;
-    right: 10vh;
-    z-index:2;
-}
-
-    /*bars*/
-
-.bar{
-    width: 35px;
-    height: 5px;
-    background-color: #e13e17;
-    margin: 6px 0;
-    transition: 0.4s;
-    z-index:2;
-}
-
-.change .bar{
-    background-color: #e13e17;
-    z-index: ;
-}
-
-.change #bar1{
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-  z-index:2;
-}
-
-.change #bar3{
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-  z-index:2;
-}
-
-.change #bar2{
-  opacity: 0;
-  z-index:2;
-}
-
-      /*list titles*/
-
-.nav li a{
-  font-size:18pt;
-  font-weight: 400;
-	color: #e13e17;
-	text-decoration: none;
-  z-index:2;
-}
-
-.nav li a:hover{
-	font-weight: bold;
-  z-index:2;
-}
-
-.nav li{
-	list-style: none;
-	line-height: 2vh;
-	letter-spacing:1.5px;
-	position: relative;
-  left: 10vh;
-  top: 10.5vh;
-  z-index:2;	
-}
-
-.nav{
-	padding: 0;
-	margin: 0 2px;
-	transition: 0.3s ease;
-	display: none;
-	position: fixed;
-  z-index:2;
-}
-
-.left {
-  text-align: left;
-      z-index:2;
-}
+    <p id="motivation"></p>
+    <div class="webcontainer">
+              
+            <img src="https://i.ibb.co/YZXRkFf/Untitled-Artwork-3.png" alt="White topographic lines." border="0" class="imgwhitelines">
+      
+      <div class="content">
+        
+                <div class="flex-container">
+           <div class="flex-items">
+             <h2>Heart*</h2>
+             <p class="txt">I'm passionate about creating something out of nothing. I thrive when I'm able to implement creativity in my work.</p>
+           </div>
+            <div class="flex-items"><img src="https://i.ibb.co/X7xXwKv/Untitled-Artwork-16.png" alt="Circle." class="circle">   </div>
+        </div>
+        
+ 
+        <div class="flex-container">
+           <div class="flex-items">
+             <img src="https://i.ibb.co/BsSvW0T/Untitled-Artwork-14.png" alt="Triangle." class="circle">
+           </div>
+            <div class="flex-items">
+              <h2>Mind*</h2>
+             <p class="txt">I like to learn new things. Gaining new perspectives drives me to understand how things work.</p>
+            </div>
+        </div>
+        
+               <div class="flex-container">
+           <div class="flex-items">
+             <h2>Skills*</h2>
+             <p class="txt">I believe that I have the right skills to learn how to code. I look forward to strenghthening these and to obtain new ones.</p>
+           </div>
+            <div class="flex-items"><img src="https://i.ibb.co/tCHryp3/Untitled-Artwork-15.png" alt="Square." class="circle">               </div>
+            </div>
+    </div>
+    </div>
 
 
-.change{
-	display: block;
-  z-index:2;
-}
+      <!-- section Motivation. end -->
+   
+      <!-- section Why web development? start -->
+      
+      <section class="fwh-webdev">           
+      <p id="webdev"></p>
+       
+          
+          <div class="webcontainer"> 
+                  <div class="content">
+                    <h5>Web development.</h5>
+        
+                    
+            <div class="flex-container2">  
+              
+           <div class="webtitle"> 
+             <h4>Opportunities, diversity and environment.</h4></div> 
+             <p class="webtxt">What I love about web development is that it is a growing and evolving sector. A world full of possibilities. There is no limit to the knowledge that can be gained and there is always a window of opportunity. Challenging tasks are daily on the menu and are addressed by innovative thinking combined with a hands-on mentality. Web development is a branch that celebrates diversity on multiple levels. Not only in terms of content, but also in terms of context and process. Web development requires a unique combination of logical, social, creative and emotional thinking. For me, all these elements help create an environment that is beneficial to find joy and fulfillment in my work.  </p>
+         
+                                            
+          </div>
+          </div>
+            
+                <div class="webimage"><img src="https://i.ibb.co/5YY5srR/6d0911040040aecf4bd351854e69ed3b.jpg" alt="Laptop." class="laptop">  
+              <div class="overlay"></div>
+        </div>
+
+       
+            </section>
 
 
-/*fwh-motivation layout*/
+      <!-- section Why web development? end -->
 
-.fwh-motivation {
-    height: 100vh;
-    background: #e6e6e6;
-    box-sizing: border-box;
-    margin: 0; 
-    display:flex;
-    min-height:100vh;
-}
+      <!-- section Why BeCode? start -->
+          
+     <section class="fwh-webdev">
+      <p id="becode"></p>
+        
+      <div class="webcontainer">
+              
+       
+      
+      <div class="content">
+         <h5>BeCode.</h5>
+        
+                <div class="flex-container3">
+           <div class="flex-items3">
+             <h2 class="code">01 Active learning</h2>
+             <p class="txt3">I believe that learning by doing is a great way to learn a new skill. When you are immersed in a practical learning process, you quickly learn from your mistakes and rise above them. There is nothing as stimulating as experiencing progress on a daily basis.
+             </p>
+           </div>
+        </div>
+        
+ 
+        <div class="flex-container3">
+            <div class="flex-items3">
+              <h2 class="code">02 Teamwork</h2>
+             <p class="txt3">Learning together has many advantages. It boosts creativity, provides structure and gives support. Helping, coaching and encouraging are incredibly valuable assets when learning a new skill. 
+               
+            </p>
+            </div>
+        </div>
+    
+               <div class="flex-container3">
+           <div class="flex-items3">
+             <h2 class="code">03 Integration</h2>
+             <p class="txt3">BeCode's mission to help build a more inclusive society works inspiring. Their initiative helps people like me to integrate back into the job market with a backpack full of high in demand skills. It's a great motivator that when I put in the work, there's a promising guarantee that within a year I can find myself a more sustainable future.
+ 
 
-.imgwhitelines {
-  position: absolute;
-  top: 20%;
-  left: -20%;
-  display: inline-flex;
-  z-index: 1;
-  opacity: 0%;
-}
+</p>
+           </div>
+            </div>
+    </div>
+    </div>    
+        
+        </section>   
+    
 
+      <!-- section Why BeCode? end -->
 
-.content {
-  margin-top: 10vh;
- in-argin-left:-2%;
-  justify-content:center;
-  }
+      <!-- section About. start -->
 
+         <section class="about">           
+      <p id="about"></p>
+    
+          <div class="webcontainer"> 
+                  <div class="content">
+                    <h5 class="abouttitle">About</h5>
+        
+                    
+            <div class="flex-container4">  
+              
+             <p class="webtxt4">This website was created as a part of my application for BeCode's web development training. It was a way for me to explore coding on a whole new level. My first experience with code was at the early ages of internet, when you still needed html to style your online text. With the coming of the text editor, coding to me was a way of the past. It was only recently that I was reminded of this, when I participated in BeCode's HTML and CSS workshop. That was the moment when my curiosity for code changed into an active pursuit. The more I get into it, the more I want to get into it even more. It definitely stimulates my hunter-gatherer mind, which is funny because in the workshop someone called html a sandwich. #codingisfun ♥ 
+               
+             </p>
+         
+                                            
+          </div>
+          </div>
+            
+            
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: baseline align-content: center;
-  margin-top:-4vh;
-}
-
-.flex-items:nth-child(1) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: center;
-  align-self: center;
-  order: 0;
-  width: 20%;
-  height:15%;
-  padding-right: 2%;
-  pading-left:-2%;
-  padding-bottom:2%;
-  z-index: 2;
-}
-
-.flex-items:nth-child(2) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: center;
-  align-self: center;
-  order: 0;
-  width: 20%;
-  height:15%;
-  padding: 2%;
-}
-
-.circle {
-  width: 40%;
-  height: 40%;
-  align: center;
-  padding-left: 25%;
-}
-
-h2 {
-  font-size: 3em;
-  padding:0;
-  margin: 0;
-  color: #e13e17;
-  text-align: justify;
-  text-transform: uppercase;
-}  
-
-.txt {
-  padding: 0;
-  margin: 0;
-  color: #e13e17;
-  font-size: 3vh;
-  text-align: justify;
-}
-
-/*fwh-webdev layout*/
-
-.fwh-webdev {
-    height: 100vh;
-    background: #e6e6e6;
-    box-sizing: border-box;
-    margin: 0; 
-    display:flex;
-    min-height:100vh;
-}
-
-h3 {
-  font-size: 5vw;
-  font-weight:500;
-  letter-spacing: 1.5px;
-  text-align: center;
-}
-
-.flex-container2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content:center;
-  align-items: center;
-  align-content: center;
-  margin-top:-4vh;
-}
-
-.webtxt {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: center;
-  align-self: center;
-  order: 0;
-  width: 45%;
-  height:auto;
-  padding-right: 10%;
-  padding-top: 2%;
-  background-size: contain;
-  position: absolute;
-  z-index: 2;
-  margin-top: 33%;
-  margin-left: -9%;
-  font-size: 1.5vw;
-  color: #e13e17;
-  text-align: justify;
-}
+       
+            </section>
 
 
-.webtitle {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: center;
-  align-self: center;
-  order: 0;
-  width: 20%;
-  height:15%;
-  padding-top: 4%;
-  padding-right: 10%;
-  background-size: contain;
-  position: absolute;
-  z-index: 2;
-  margin-top: 16%;
-  margin-left: -21.8%;
-
-}
-
-h4 {
-  font-size: 2em;
-  color: #e13e17; 
-  display: flex;
-  order: 1;
-  position: absolute;
-  z-index: 2;
-  font-style: italic;
-  line-height: 5vh;
-}
-
-
-
-.webimage {
-  position: relative;
-  width: 50%;
-  z-index:0;
-}
-
-.laptop {
-  display: block;
-  width: 40%;
-  height: auto;
-  margin-left: 115%;
-  margin-top: 40%;
-  border: 40px solid #e13e17;
-  opacity: 0%;
-}
-
-/* fwh-becode layout*/
-
-section .fwh-becode {
-    height: 100vh;
-    background: #e6e6e6;
-    box-sizing: border-box;
-    margin: 0; 
-    display:flex;
-    min-height:100vh;
-}
-
-h5 {
-  font-size: 10vw;
-  color: black; 
-  display: flex;
-  order: 1;
-  position: absolute;
-  z-index: 1;
-  font-weight: 400;
-  letter-spacing: 1.5px;
-  text-align: center;
-  margin-top:-2%;
-  margin-left:0.5%;
-  font-family: 'Source Serif Pro', serif;
-}
-
-.flex-container3 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: baseline align-content: center;
-  margin-top:-4vh;
-}
-
-.flex-items3:nth-child(1) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: center;
-  align-self: center;
-  order: 0;
-  width: 42%;
-  height:15%;
-  padding-right: 2%;
-  pading-left:-2%;
-  padding-bottom:1.5%;
-  z-index: 2;
-  margin-left:26%;
-  margin-top: 1.4%;
-}
-
-.code {
-  font-size: 3em;
-  padding:0;
-  margin: 0;
-  color: #e13e17;
-  text-align: justify;
-  text-transform: uppercase;
-}  
-
-.txt3 {
-  padding: 0;
-  margin: 0;
-  color: #e13e17;
-  font-size: 3vh;
-  text-align: justify;
-}
-
-/* fwh-about layout*/
-
-.txt4 {
-  padding: 0;
-  margin: 0;
-  color: black;
-  font-size: 3vh;
-  text-align: justify;
-}
-
-.flex-container4 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.webtxt4 {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  order: 0;
-  height:15%;
-  padding-top: 2%;
-  padding-right:-8%;
-  bacground-size: contain;
-  position: absolute;
-  margin-top: 4.5%;
-  z-index: 2;
-  font-size: 1.5vw;
-  color: black;
-  text-align: justify;
-  line-height: 4vh;
-}
-
-.abouttitle {
-  margin-top: -5.5%;
-  }
-
-/* margin between sections*/
-
-.fwh-webdev {
-  margin-top: 10%;
-  }
-
-.fwh-becode{
-  margin-top: 10%;
-  }
-
-.fwh-about{
-  margin-top: 0%;
-  }
+      
+        
+        <!-- section About. end -->    
+       
+    </body>
+</html>
