@@ -9,13 +9,14 @@ var TxtType = function(el, toRotate, period) {
         this.isDeleting = false;
     };
 
-    TxtType.prototype.tick = function() {
+TxtType.prototype.tick = function() {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
 
         if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
+        } 
+        else {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
@@ -29,7 +30,8 @@ var TxtType = function(el, toRotate, period) {
         if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
         this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
+        } 
+        else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
         delta = 500;
@@ -40,7 +42,7 @@ var TxtType = function(el, toRotate, period) {
         }, delta);
     };
 
-    window.onload = function() {
+window.onload = function() {
         var elements = document.getElementsByClassName('typewrite');
         for (var i=0; i<elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
@@ -49,22 +51,20 @@ var TxtType = function(el, toRotate, period) {
               new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         };
-        // INJECT CSS
+  
+// inject CSS
         var css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
-    };
-    
+    };   
 
 // menu icon
-
-
 function onClickMenu(){
-	document.getElementById("menu").classList.toggle("change");
-	document.getElementById("nav").classList.toggle("change");
+	      document.getElementById("menu").classList.toggle("change");
+	      document.getElementById("nav").classList.toggle("change");
 	
-	document.getElementById("menu-bg").classList.toggle("change-bg");
+	      document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
 
@@ -81,3 +81,7 @@ $(document).ready(function(){
 	  }
   })
 })
+
+
+
+
